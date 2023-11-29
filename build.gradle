@@ -15,6 +15,9 @@ plugins {
 	id 'fabric-loom' version '1.2-SNAPSHOT' apply false
 	id 'com.github.johnrengelman.shadow' version '8.1.1'
 	id 'me.modmuss50.remotesign' version "0.4.0"
+
+	// Checker Framework pluggable type-checking
+	id 'org.checkerframework' version '0.6.35' apply false
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -29,6 +32,7 @@ allprojects {
 	apply plugin: 'eclipse'
 	apply plugin: 'checkstyle'
 	apply plugin: "com.diffplug.spotless"
+	apply plugin: 'org.checkerframework'
 
 	def constantsSource = rootProject.file("src/main/java/net/fabricmc/loader/impl/FabricLoaderImpl.java").text
 	version = (constantsSource =~ /\s+VERSION\s*=\s*"(.*)";/)[0][1] + (ENV.GITHUB_ACTIONS ? "" : "+local")
@@ -45,6 +49,17 @@ allprojects {
 				excludeGroupByRegex "org.ow2.asm"
 			}
 		}
+	}
+	checkerFramework {
+		checkers = ['org.checkerframework.checker.optional.OptionalChecker']
+		extraJavacArgs = [
+			'-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
+			'-AassumePure'
+		]
+	}
+	dependencies {
+		checkerFramework 'org.checkerframework:checker:3.40.0'
+		implementation 'org.checkerframework:checker-qual:3.40.0'
 	}
 }
 
