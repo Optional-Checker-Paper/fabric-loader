@@ -40,8 +40,10 @@ public final class McVersion {
 	 * contains release and pre-release information.
 	 */
 	private final String normalized;
+	@SuppressWarnings("OptionalUsedAsFieldOrParameterType") // intellij-suppression-optional-used-as-field
 	private final OptionalInt classVersion;
 
+	@SuppressWarnings("OptionalUsedAsFieldOrParameterType") // intellij-suppression-optional-used-as-parameter
 	private McVersion(String id, String name, String raw, String release, OptionalInt classVersion) {
 		this.id = id;
 		this.name = name;
@@ -81,6 +83,7 @@ public final class McVersion {
 		private String name; // name as in version.json
 		private String version; // derived from version.json's id and name or other sources
 		private String release; // mc release (major.minor)
+		@SuppressWarnings("OptionalUsedAsFieldOrParameterType") // intellij-suppression-optional-used-as-field
 		private OptionalInt classVersion = OptionalInt.empty();
 
 		// Setters

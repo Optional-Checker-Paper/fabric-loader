@@ -187,6 +187,7 @@ public class ModContainerImpl extends net.fabricmc.loader.ModContainer {
 		return parentModId != null ? FabricLoaderImpl.INSTANCE.getModContainer(parentModId) : Optional.empty();
 	}
 
+	@SuppressWarnings("SimplifyOptionalCallChains") // intellij-suppression-simplify-optional-call-chains
 	@Override
 	public Collection<ModContainer> getContainedMods() {
 		if (childModIds.isEmpty()) return Collections.emptyList();
