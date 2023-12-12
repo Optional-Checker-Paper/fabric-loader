@@ -40,10 +40,10 @@ public final class McVersion {
 	 * contains release and pre-release information.
 	 */
 	private final String normalized;
-        @SuppressWarnings("optional:optional.field")  // optional-field
+        @SuppressWarnings("optional:optional.field")  // style-optional-field
 	private final OptionalInt classVersion;
 
-        @SuppressWarnings("optional:optional.parameter")  // optional-parameter
+        @SuppressWarnings("optional:optional.parameter")  // style-optional-parameter
 	private McVersion(String id, String name, String raw, String release, OptionalInt classVersion) {
 		this.id = id;
 		this.name = name;
@@ -83,7 +83,7 @@ public final class McVersion {
 		private String name; // name as in version.json
 		private String version; // derived from version.json's id and name or other sources
 		private String release; // mc release (major.minor)
-		@SuppressWarnings("optional:optional.field")  // optional-field
+		@SuppressWarnings("optional:optional.field")  // style-optional-field
 		private OptionalInt classVersion = OptionalInt.empty();
 
 		// Setters
