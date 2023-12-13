@@ -52,12 +52,16 @@ allprojects {
 		maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
 	}
 	checkerFramework {
-		checkers = ['org.checkerframework.checker.optional.OptionalChecker']
+		checkers = [
+      'org.checkerframework.checker.optional.OptionalChecker',
+      'org.checkerframework.common.util.report.ReportChecker'
+    ]
 		extraJavacArgs = [
 			'-AsuppressWarnings=type.anno.before.modifier,type.anno.before.decl.anno',
 			'-AassumePure',
 			'-AwarnUnneededSuppressions',
-			'-AassumeAssertionsAreEnabled'
+			'-AassumeAssertionsAreEnabled',
+      "-Astubs=${project.projectDir}/reportoptional.astub",
 		]
 		excludeTests = true
 	}
@@ -406,3 +410,9 @@ task checkVersion {
 
 publish.mustRunAfter checkVersion
 github.mustRunAfter checkVersion
+
+afterEvaluate {
+     tasks.withType(JavaCompile) {
+         options.compilerArgs << "-Xmaxerrs" << "99999"
+     }
+}
