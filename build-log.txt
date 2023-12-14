@@ -1,0 +1,464 @@
+Minecraft test sub project requires java 17 or higher!
+> Task :createCheckerFrameworkManifest
+
+> Task :compileJava
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/FabricLoaderImpl.java:395: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<net.fabricmc.loader.api.ModContainer> getModContainer(String id) {
+	                                                      ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/FabricLoaderImpl.java:395: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<net.fabricmc.loader.api.ModContainer> getModContainer(String id) {
+	                                                      ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/FabricLoaderImpl.java:396: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return Optional.ofNullable(modMap.get(id));
+		                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/FabricLoaderImpl.java:396: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+		return Optional.ofNullable(modMap.get(id));
+		                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/FabricLoaderImpl.java:396: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+		return Optional.ofNullable(modMap.get(id));
+		               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/FabricLoaderImpl.java:474: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+			Path path = modContainer.findPath(accessWidener).orElse(null);
+			                                                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/FabricLoaderImpl.java:474: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+			Path path = modContainer.findPath(accessWidener).orElse(null);
+			                                                ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/FabricLoader.java:137: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	Optional<ModContainer> getModContainer(String id);
+	                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:171: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<Path> res = findPath(file);
+		               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:171: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<Path> res = findPath(file);
+		                             ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:172: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (res.isPresent()) return res.get();
+		                 ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:172: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (res.isPresent()) return res.get();
+		       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:172: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+		if (res.isPresent()) return res.get();
+		                                   ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:172: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+		if (res.isPresent()) return res.get();
+		                               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:186: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<ModContainer> getContainingMod() {
+	                              ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:186: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<ModContainer> getContainingMod() {
+	                              ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:187: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return parentModId != null ? FabricLoaderImpl.INSTANCE.getModContainer(parentModId) : Optional.empty();
+		                           ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:187: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return parentModId != null ? FabricLoaderImpl.INSTANCE.getModContainer(parentModId) : Optional.empty();
+		                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:187: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return parentModId != null ? FabricLoaderImpl.INSTANCE.getModContainer(parentModId) : Optional.empty();
+		                                                                                                    ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:187: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+		return parentModId != null ? FabricLoaderImpl.INSTANCE.getModContainer(parentModId) : Optional.empty();
+		                                                                                                    ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:187: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+		return parentModId != null ? FabricLoaderImpl.INSTANCE.getModContainer(parentModId) : Optional.empty();
+		                                                                                              ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:197: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+			ModContainer mod = FabricLoaderImpl.INSTANCE.getModContainer(id).orElse(null);
+			                                                                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/ModContainerImpl.java:197: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+			ModContainer mod = FabricLoaderImpl.INSTANCE.getModContainer(id).orElse(null);
+			                                                                ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/ModContainer.java:61: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	default Optional<Path> findPath(String file) {
+	                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/ModContainer.java:61: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	default Optional<Path> findPath(String file) {
+	                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/ModContainer.java:64: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+			if (Files.exists(path)) return Optional.of(path);
+			                                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/ModContainer.java:64: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+			if (Files.exists(path)) return Optional.of(path);
+			                                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/ModContainer.java:64: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+			if (Files.exists(path)) return Optional.of(path);
+			                                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/ModContainer.java:61: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	default Optional<Path> findPath(String file) {
+	                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/ModContainer.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return Optional.empty();
+		                     ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/ModContainer.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+		return Optional.empty();
+		                     ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/ModContainer.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+		return Optional.empty();
+		               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/ModContainer.java:90: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	Optional<ModContainer> getContainingMod();
+	                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/metadata/ModMetadata.java:170: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	Optional<String> getIconPath(int size);
+	                 ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/SemanticVersion.java:68: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	Optional<String> getPrereleaseKey();
+	                 ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/SemanticVersion.java:77: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	Optional<String> getBuildKey();
+	                 ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/metadata/ContactInformation.java:32: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		public Optional<String> get(String key) {
+		                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/metadata/ContactInformation.java:32: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		public Optional<String> get(String key) {
+		                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/metadata/ContactInformation.java:33: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+			return Optional.empty();
+			                     ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/metadata/ContactInformation.java:33: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+			return Optional.empty();
+			                     ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/metadata/ContactInformation.java:33: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+			return Optional.empty();
+			               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/api/metadata/ContactInformation.java:48: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	Optional<String> get(String key);
+	                 ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/patch/GamePatch.java:45: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+		return node.fields.stream().filter(predicate).findAny().orElse(null);
+		                                                              ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/patch/GamePatch.java:45: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+		return node.fields.stream().filter(predicate).findAny().orElse(null);
+		                                                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/patch/GamePatch.java:53: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+		return node.methods.stream().filter(predicate).findAny().orElse(null);
+		                                                               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/patch/GamePatch.java:53: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+		return node.methods.stream().filter(predicate).findAny().orElse(null);
+		                                                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/VersionPredicateParser.java:68: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+					assert !semVer.getPrereleaseKey().isPresent();
+					                                           ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/VersionPredicateParser.java:68: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+					assert !semVer.getPrereleaseKey().isPresent();
+					                                 ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/VersionPredicateParser.java:81: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+					version = new SemanticVersionImpl(newComponents, "", semVer.getBuildKey().orElse(null));
+					                                                                                ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/VersionPredicateParser.java:81: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+					version = new SemanticVersionImpl(newComponents, "", semVer.getBuildKey().orElse(null));
+					                                                                         ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:192: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getPrereleaseKey() {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:192: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getPrereleaseKey() {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:193: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return Optional.ofNullable(prerelease);
+		                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:193: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+		return Optional.ofNullable(prerelease);
+		                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:193: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+		return Optional.ofNullable(prerelease);
+		               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:197: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getBuildKey() {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:197: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getBuildKey() {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:198: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return Optional.ofNullable(build);
+		                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:198: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+		return Optional.ofNullable(build);
+		                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:198: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+		return Optional.ofNullable(build);
+		               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:272: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<String> prereleaseA = getPrereleaseKey();
+		                 ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:272: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<String> prereleaseA = getPrereleaseKey();
+		                                               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:273: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<String> prereleaseB = o.getPrereleaseKey();
+		                 ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:273: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<String> prereleaseB = o.getPrereleaseKey();
+		                                                 ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:275: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (prereleaseA.isPresent() || prereleaseB.isPresent()) {
+		                         ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:275: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (prereleaseA.isPresent() || prereleaseB.isPresent()) {
+		               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:275: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (prereleaseA.isPresent() || prereleaseB.isPresent()) {
+		                                                    ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:275: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+		if (prereleaseA.isPresent() || prereleaseB.isPresent()) {
+		                                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:276: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+			if (prereleaseA.isPresent() && prereleaseB.isPresent()) {
+			                         ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:276: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+			if (prereleaseA.isPresent() && prereleaseB.isPresent()) {
+			               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:276: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+			if (prereleaseA.isPresent() && prereleaseB.isPresent()) {
+			                                                    ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:276: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+			if (prereleaseA.isPresent() && prereleaseB.isPresent()) {
+			                                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:277: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+				StringTokenizer prereleaseATokenizer = new StringTokenizer(prereleaseA.get(), ".");
+				                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:277: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+				StringTokenizer prereleaseATokenizer = new StringTokenizer(prereleaseA.get(), ".");
+				                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:278: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+				StringTokenizer prereleaseBTokenizer = new StringTokenizer(prereleaseB.get(), ".");
+				                                                                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:278: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+				StringTokenizer prereleaseBTokenizer = new StringTokenizer(prereleaseB.get(), ".");
+				                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:306: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+			} else if (prereleaseA.isPresent()) {
+			                                ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/util/version/SemanticVersionImpl.java:306: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+			} else if (prereleaseA.isPresent()) {
+			                      ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/legacyJava/net/fabricmc/loader/util/version/SemanticVersionImpl.java:51: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getPrereleaseKey() {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/legacyJava/net/fabricmc/loader/util/version/SemanticVersionImpl.java:51: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getPrereleaseKey() {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/legacyJava/net/fabricmc/loader/util/version/SemanticVersionImpl.java:52: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return parent.getPrereleaseKey();
+		                              ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/legacyJava/net/fabricmc/loader/util/version/SemanticVersionImpl.java:56: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getBuildKey() {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/legacyJava/net/fabricmc/loader/util/version/SemanticVersionImpl.java:56: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getBuildKey() {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/legacyJava/net/fabricmc/loader/util/version/SemanticVersionImpl.java:57: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return parent.getBuildKey();
+		                         ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/discovery/ModSolver.java:460: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				String pr = v.getPrereleaseKey().orElse(null);
+				                                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/discovery/ModSolver.java:460: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				String pr = v.getPrereleaseKey().orElse(null);
+				                                ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/discovery/ModSolver.java:478: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				String pr = v.getPrereleaseKey().orElse(null);
+				                                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/discovery/ModSolver.java:478: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				String pr = v.getPrereleaseKey().orElse(null);
+				                                ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/discovery/BuiltinMetadataWrapper.java:121: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getIconPath(int size) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/discovery/BuiltinMetadataWrapper.java:121: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getIconPath(int size) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/discovery/BuiltinMetadataWrapper.java:122: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return parent.getIconPath(size);
+		                         ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/discovery/ResultAnalyzer.java:496: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+		if (!"".equals(min.getPrereleaseKey().orElse(null))
+		                                            ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/discovery/ResultAnalyzer.java:496: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+		if (!"".equals(min.getPrereleaseKey().orElse(null))
+		                                     ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/discovery/ResultAnalyzer.java:497: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				|| !"".equals(max.getPrereleaseKey().orElse(null))) {
+				                                           ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/discovery/ResultAnalyzer.java:497: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+				|| !"".equals(max.getPrereleaseKey().orElse(null))) {
+				                                    ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/GameProviderHelper.java:77: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public static Optional<Path> getSource(ClassLoader loader, String filename) {
+	                             ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/GameProviderHelper.java:77: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public static Optional<Path> getSource(ClassLoader loader, String filename) {
+	                             ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/GameProviderHelper.java:82: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+				return Optional.of(UrlUtil.getCodeSource(url, filename));
+				                  ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/GameProviderHelper.java:82: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+				return Optional.of(UrlUtil.getCodeSource(url, filename));
+				                  ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/GameProviderHelper.java:82: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+				return Optional.of(UrlUtil.getCodeSource(url, filename));
+				               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/GameProviderHelper.java:77: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public static Optional<Path> getSource(ClassLoader loader, String filename) {
+	                             ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/GameProviderHelper.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return Optional.empty();
+		                     ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/GameProviderHelper.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+		return Optional.empty();
+		                     ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/game/GameProviderHelper.java:89: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+		return Optional.empty();
+		               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:38: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	static final IconEntry NO_ICON = size -> Optional.empty();
+	                                                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:38: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+	static final IconEntry NO_ICON = size -> Optional.empty();
+	                                                       ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:38: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+	static final IconEntry NO_ICON = size -> Optional.empty();
+	                                                 ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:211: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getIconPath(int size) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:211: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getIconPath(int size) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:212: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return this.icon.getIconPath(size);
+		                            ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:327: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		Optional<String> getIconPath(int size);
+		                 ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:338: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		public Optional<String> getIconPath(int size) {
+		                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:338: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		public Optional<String> getIconPath(int size) {
+		                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:339: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+			return Optional.of(this.icon);
+			                  ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:339: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+			return Optional.of(this.icon);
+			                  ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:339: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+			return Optional.of(this.icon);
+			               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:351: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		public Optional<String> getIconPath(int size) {
+		                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:351: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		public Optional<String> getIconPath(int size) {
+		                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:362: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+			return Optional.of(icons.get(iconValue));
+			                  ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:362: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+			return Optional.of(icons.get(iconValue));
+			                  ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V1ModMetadata.java:362: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+			return Optional.of(icons.get(iconValue));
+			               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/BuiltinModMetadata.java:128: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getIconPath(int size) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/BuiltinModMetadata.java:128: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getIconPath(int size) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/BuiltinModMetadata.java:129: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		if (icons.isEmpty()) return Optional.empty();
+		                                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/BuiltinModMetadata.java:129: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+		if (icons.isEmpty()) return Optional.empty();
+		                                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/BuiltinModMetadata.java:129: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+		if (icons.isEmpty()) return Optional.empty();
+		                                    ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/BuiltinModMetadata.java:128: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getIconPath(int size) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/BuiltinModMetadata.java:135: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return Optional.of(ret.getValue());
+		                  ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/BuiltinModMetadata.java:135: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+		return Optional.of(ret.getValue());
+		                  ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/BuiltinModMetadata.java:135: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+		return Optional.of(ret.getValue());
+		               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V0ModMetadata.java:172: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getIconPath(int size) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V0ModMetadata.java:172: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> getIconPath(int size) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V0ModMetadata.java:174: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return Optional.of("assets/" + getId() + "/icon.png");
+		                  ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V0ModMetadata.java:174: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+		return Optional.of("assets/" + getId() + "/icon.png");
+		                  ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/V0ModMetadata.java:174: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+		return Optional.of("assets/" + getId() + "/icon.png");
+		               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/ContactInformationImpl.java:33: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> get(String key) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/ContactInformationImpl.java:33: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> get(String key) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/ContactInformationImpl.java:34: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return Optional.ofNullable(map.get(key));
+		                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/ContactInformationImpl.java:34: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+		return Optional.ofNullable(map.get(key));
+		                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/java/net/fabricmc/loader/impl/metadata/ContactInformationImpl.java:34: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+		return Optional.ofNullable(map.get(key));
+		               ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/legacyJava/net/fabricmc/loader/metadata/MapBackedContactInformation.java:37: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> get(String key) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/legacyJava/net/fabricmc/loader/metadata/MapBackedContactInformation.java:37: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+	public Optional<String> get(String key) {
+	                        ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/legacyJava/net/fabricmc/loader/metadata/MapBackedContactInformation.java:38: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+		return Optional.ofNullable(map.get(key));
+		                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/legacyJava/net/fabricmc/loader/metadata/MapBackedContactInformation.java:38: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+		return Optional.ofNullable(map.get(key));
+		                          ^
+/tmp/experiments/optional-paper-counts-repos/fabric-loader/src/main/legacyJava/net/fabricmc/loader/metadata/MapBackedContactInformation.java:38: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+		return Optional.ofNullable(map.get(key));
+		               ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+145 warnings
+
+> Task :processResources
+> Task :classes
+> Task :jar SKIPPED
+> Task :sourcesJar
+> Task :assemble
+> Task :junit:createCheckerFrameworkManifest
+> Task :junit:compileJava
+> Task :junit:processResources
+> Task :junit:classes
+> Task :junit:jar
+> Task :junit:sourcesJar
+> Task :junit:assemble
+> Task :minecraft:createCheckerFrameworkManifest
+> Task :minecraft:compileJava
+> Task :minecraft:processResources
+> Task :minecraft:classes
+> Task :minecraft:jar SKIPPED
+> Task :minecraft:assemble UP-TO-DATE
+
+BUILD SUCCESSFUL in 12s
+12 actionable tasks: 12 executed
