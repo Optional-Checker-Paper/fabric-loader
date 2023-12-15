@@ -460,5 +460,5 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :minecraft:jar SKIPPED
 > Task :minecraft:assemble UP-TO-DATE
 
-BUILD SUCCESSFUL in 12s
+BUILD SUCCESSFUL in 13s
 12 actionable tasks: 12 executed
